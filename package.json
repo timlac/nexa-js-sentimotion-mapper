@@ -1,0 +1,19 @@
+{
+  "name": "nexa-js-sentimotion-mapper",
+  "version": "1.0.0",
+  "description": "Mapper functions for the sentimotion database adapted for javascript",
+  "main": "src/mapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timlac/nexa-js-sentimotion-mapper.git"
+  },
+  "author": "Tim Lachmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timlac/nexa-js-sentimotion-mapper/issues"
+  },
+  "homepage": "https://github.com/timlac/nexa-js-sentimotion-mapper#readme"
+}
