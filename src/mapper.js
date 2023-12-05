@@ -40,6 +40,12 @@ function getValenceFromEmotion(emotion) {
     return translateValues(definitions.emotion_to_valence, emotion);
 }
 
+function getValenceFromEmotionId(emotionId) {
+    const emotion = translateValues(emotionIdToEmotion, emotionId)
+    return translateValues(definitions.emotion_to_valence, emotion)
+}
+
+
 function getSweTranslationFromEng(emotionEng) {
     return translateValues(definitions.emotion_eng_to_swe, emotionEng);
 }
@@ -58,6 +64,8 @@ function getEmotionIdFromSwe(emotionSwe) {
     return translateValues(definitions.emotion_to_emotion_id, emotionEng);
 }
 
+
+
 export {
     emotionIdToEmotion,
     getEmotionInSweFromId,
@@ -67,6 +75,7 @@ export {
     getEmotionIdFromEmotion,
     getEngTranslationFromSwe,
     getValenceFromEmotion,
+    getValenceFromEmotionId,
     getSweTranslationFromEng,
     getEmotionAbrFromEmotion,
 }
