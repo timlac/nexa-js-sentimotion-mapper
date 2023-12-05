@@ -59,6 +59,7 @@ function getEmotionIdFromSwe(emotionSwe) {
 }
 
 export {
+    emotionIdToEmotion,
     getEmotionInSweFromId,
     getEmotionIdFromSwe,
     getEmotionFromId,

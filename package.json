@@ -1,6 +1,6 @@
 {
   "name": "nexa-js-sentimotion-mapper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mapper functions for the sentimotion database adapted for javascript",
   "main": "src/mapper.js",
   "scripts": {
