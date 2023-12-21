@@ -10,6 +10,9 @@ function capitalizeFirstLetter(string) {
 }
 
 function prettifySwe(inputValues) {
+
+    console.log("in prettify")
+
     const formatMapSwe = {
         "exalterad_förväntansfull": "Exalterad/Förväntansfull",
         "intresse_nyfikenhet": "Intresse/Nyfikenhet",
