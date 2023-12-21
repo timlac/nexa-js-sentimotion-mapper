@@ -64,6 +64,11 @@ function getEmotionIdFromSwe(emotionSwe) {
     return translateValues(definitions.emotion_to_emotion_id, emotionEng);
 }
 
+function getEmotionDescInSweFromId(emotionId){
+    const emotionSwe = getEmotionInSweFromId(emotionId)
+    return translateValues(definitions.emotion_swe_to_desc, emotionSwe)
+}
+
 
 
 export {
@@ -78,4 +83,5 @@ export {
     getValenceFromEmotionId,
     getSweTranslationFromEng,
     getEmotionAbrFromEmotion,
+    getEmotionDescInSweFromId
 }
