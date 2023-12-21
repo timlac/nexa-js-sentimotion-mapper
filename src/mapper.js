@@ -10,9 +10,6 @@ function capitalizeFirstLetter(string) {
 }
 
 function prettifySwe(inputValues) {
-
-    console.log("in prettify")
-
     const formatMapSwe = {
         "tillfredsställelse_belåtenhet": "Tillfredsställelse/Belåtenhet",
         "exalterad_förväntansfull": "Exalterad/Förväntansfull",
@@ -86,10 +83,6 @@ function getEngTranslationFromSwe(emotionSwe) {
 }
 
 function getEmotionInSweFromId(emotionId, pretty=false) {
-
-    console.log("in get emotion")
-    console.log(pretty)
-
     const emotionEng = translateValues(emotionIdToEmotion, emotionId);
     const ret = translateValues(definitions.emotion_eng_to_swe, emotionEng);
     if (pretty){
