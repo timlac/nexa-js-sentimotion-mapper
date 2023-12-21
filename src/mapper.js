@@ -110,7 +110,13 @@ function getEmotionDescInSweFromId(emotionId) {
 }
 
 
+function logSomethingAndReturn(){
+    console.log("hello world")
+    return "hello darkness"
+}
+
 export {
+    logSomethingAndReturn,
     emotionIdToEmotion,
     getEmotionInSweFromId,
     getEmotionIdFromSwe,
