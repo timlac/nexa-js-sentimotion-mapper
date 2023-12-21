@@ -86,6 +86,10 @@ function getEngTranslationFromSwe(emotionSwe) {
 }
 
 function getEmotionInSweFromId(emotionId, pretty=false) {
+
+    console.log("in get emotion")
+    console.log(pretty)
+
     const emotionEng = translateValues(emotionIdToEmotion, emotionId);
     const ret = translateValues(definitions.emotion_eng_to_swe, emotionEng);
     if (pretty){
