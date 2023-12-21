@@ -14,6 +14,7 @@ function prettifySwe(inputValues) {
     console.log("in prettify")
 
     const formatMapSwe = {
+        "tillfredsställelse_belåtenhet": "Tillfredsställelse/Belåtenhet",
         "exalterad_förväntansfull": "Exalterad/Förväntansfull",
         "intresse_nyfikenhet": "Intresse/Nyfikenhet",
         "sexuell_lust": "Sexuell lust",
@@ -25,7 +26,6 @@ function prettifySwe(inputValues) {
         "nöd_smärta": "Nöd/Smärta",
         "att_bli_avvisad": "Att bli avvisad",
         "negativ_förvåning": "Negativ förvåning",
-        "neutral": "neutral"
     }
 
     if (Array.isArray(inputValues)) {
@@ -110,13 +110,7 @@ function getEmotionDescInSweFromId(emotionId) {
 }
 
 
-function logSomethingAndReturn(){
-    console.log("hello world")
-    return "hello darkness"
-}
-
 export {
-    logSomethingAndReturn,
     emotionIdToEmotion,
     getEmotionInSweFromId,
     getEmotionIdFromSwe,
